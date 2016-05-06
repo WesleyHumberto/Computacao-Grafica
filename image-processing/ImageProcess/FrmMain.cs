@@ -121,7 +121,7 @@ namespace ImageProcess
             BitmapData bmpData = showImg.LockBits(rect, ImageLockMode.ReadWrite, showImg.PixelFormat);
             
             bc.GetObjectsRectangles().ToList().ForEach(i=>{
-                Drawing.Rectangle(bmpData, i, Color.GreenYellow);
+                Drawing.Rectangle(bmpData, i, Color.LightSeaGreen);
             });
 
             showImg.UnlockBits(bmpData);
